@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="img/icon.png" rel="icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/658038229a.js" crossorigin="anonymous"></script>
+    <title>Lian</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html"></a>
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo">
+            <img src="img/logo.png" width="137px" heigh="30px" alt="logo" title="logo" />
+          </div>
+          <div class="search">
+            <input class="search__input" id="search" type="text" name="article" placeholder="Search"> 
+            <button class="search__buttom">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <nav class="nav" id="nav">
+            <a class="nav__link" href="index.html" alt="home" title="home">Home</a>
+            <a class="nav__link" href="pages/about.html" alt="about" title="about">About</a>
+            <a class="nav__link" href="pages/portfolio.html" alt="portfolio" title="portfolio">Portfolio</a>
+            <a class="nav__link" href="pages/events.html" alt="events" title="events">Events</a>
+            <a class="nav__link" href="pages/blog.html" alt="blog" title="blog">Blog</a>
+            <a class="nav__link" href="pages/contact.html" alt="contact" title="contact">Contact</a>
+          </nav>      
+          <button class="nav__mobile" id="nav__mobile" type="button">
+            <span class="nav__mobile-item">Menu</span>
+          </button>   
+          <button class="button-form" onclick="modalOpen()">Log In</button>
+          <div id="modal-id" class="modal">
+            <form class="modal-content">
+              <div class="container">
+                <h1>Log In</h1>
+                <p>Registration takes less than a minute but gives you full control over your studying.</p>
+                <hr>
+                <label for="email"><b>Email</b></label>
+                <input class="modal-input" type="text" placeholder="Your working email" name="email" required>
+                <label for="psw"><b>Password</b></label>
+                <input class="modal-input" type="password" name="psw" required>
+                <label>
+                  <input  type="checkbox" checked="checked" name="remember">Remember me
+                </label>
+                <p>Already have an account?</p>
+                <div class="clearfix">
+                  <button class="cancelbtn" onclick="modalClose()">Close</button>
+                  <button class="loginbtn" class="signup">Log In</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="slider_all">
+      <input checked type="radio" name="respond" id="desktop" />
+      <article id="slider">
+        <input checked type="radio" name="slider" id="switch1" />
+        <input type="radio" name="slider" id="switch2" />
+        <input type="radio" name="slider" id="switch3" />
+        <div id="slides">
+          <div id="overflow">
+            <div class="image">
+              <article><img src="img/index/fon.jpg" alt="fon-one" title="fon-one" /></article>
+              <article><img src="img/index/fon2.jpg" alt="fon-two" title="fon-two" /></article>
+              <article><img src="img/index/fon3.jpg" alt="fon-three" title="fon-three" /></article>
+            </div>
+          </div>
+        </div>
+        <div id="controls">
+          <label for="switch1"></label>
+          <label for="switch2"></label>
+          <label for="switch3"></label>
+          <h2 class="intro__subtitle">Lian Creative Agency</h2>
+          <h1 class="intro__title">Minimal Freelance Portfolio</h1>
+        </div>
+        <div id="active">
+          <label for="switch1"></label>
+          <label for="switch2"></label>
+          <label for="switch3"></label>
+        </div>
+      </article>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="section__header">
+          <h3 class="section__subtitle">What we do</h3>
+          <h2 class="section__title">Story about us</h2>
+          <div class="section__text">
+            <p>We are a creative agency. We are the rock-n-rollers of the advertising market! So, we know how to do cool and it's always fun with us. Ambitious, reckless, with a thirst for something new, interesting and different.</p>
+          </div>
+        </div>
+        <div class="about">
+          <div class="about__item">
+            <div class="about__image">
+              <img src="img/index/about1.jpg" alt="super team" title="super team" />
+            </div>
+            <div class="about__text">super team</div>
+          </div>
+          <div class="about__item">
+            <div class="about__image">
+              <img src="img/index/about2.jpg" alt="super team" title="super team" />
+            </div>
+            <div class="about__text">super team</div>
+          </div>
+          <div class="about__item">
+            <div class="about__image">
+              <img src="img/index/about3.jpg" alt="super team" title="super team" />
+            </div>
+            <div class="about__text">super team</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="statistics">
+      <div class="container">
+        <div class="stat">
+          <div class="stat__item">
+            <div class="stat__count">42</div>
+            <div class="stat__text">Web Design Projects</div>
+          </div>
+          <div class="stat__item">
+            <div class="stat__count">123</div>
+            <div class="stat__text">happy client</div>
+          </div>
+          <div class="stat__item">
+            <div class="stat__count">15</div>
+            <div class="stat__text">award winner</div>
+          </div>
+          <div class="stat__item">
+            <div class="stat__count">99</div>
+            <div class="stat__text">members</div>
+          </div>
+          <div class="stat__item">
+            <div class="stat__count">24</div>
+            <div class="stat__text">Lorem ipsum</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="section__header">
+          <h3 class="section__subtitle">We work with</h3>
+          <h2 class="section__title">Amazing Services</h2>
+        </div>
+        <div class="services">
+          <div class="services__item">
+            <img class="services__icon" src="img/index/photography.png" alt="photography" title="photography" />
+            <div class="services__title">Photography</div>
+            <div class="services__text">
+              Brands that only occasionally need custom photography typically work with freelance photographers. However brands that need custom photos every day often include an in-house photographer on their creative team.
+            </div>
+          </div>
+          <div class="services__item">
+            <img class="services__icon" src="img/index/webdesign.png" alt="webdesign" title="webdesign" />
+            <div class="services__title">Web Design</div>
+            <div class="services__text">
+              Our purpose is to help organizations reflect their own core values in every communication aspect possible. In a deep and simple way.
+            </div>
+          </div>
+          <div class="services__item">
+            <img class="services__icon" src="img/index/creativity.png" alt="creativity" title="creativity" />
+            <div class="services__title">Creativity</div>
+            <div class="services__text">
+              We bring a fresh perspective to their marketing approach. Identifying new ways to evoke emotions and creating an honest and compelling experience for the targeted audience.
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="services">
+          <div class="services__item">
+            <img class="services__icon" src="img/index/seo.png" alt="seo" title="seo" />
+            <div class="services__title">seo</div>
+            <div class="services__text">
+              An effective media strategy is the optimal combination of different media channels, the optimization of proven and new advertising tools, and an adaptive approach to the advertising message.
+            </div>
+          </div>
+          <div class="services__item">
+            <img class="services__icon" src="img/index/css-html.png" alt="css-html" title="css-html" />
+            <div class="services__title">Css/Html</div>
+            <div class="services__text">
+              Implementation of an adaptive approach to brand interaction with its audience.
+            </div>
+          </div>
+          <div class="services__item">
+            <img class="services__icon" src="img/index/digital.png" alt="digital" title="digital" />
+            <div class="services__title">digital</div>
+            <div class="services__text">
+              We develop strategic decisions based on relationships between business and consumers.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section section__devices">
+      <div class="container">
+        <div class="section__header">
+          <h3 class="section__subtitle">For all devices</h3>
+          <h2 class="section__title">Unique design</h2>
+        </div>
+        <div class="devices">
+          <img class="devices__item" src="img/index/ipad.png" alt="ipad" title="ipad" />
+          <img class="devices__item devices-item-iphone" src="img/index/iphone.png" alt="iphone" title="iphone" />
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="container footer__container">
+          <div class="footer__column">
+            <img src="img/logo.png" alt="logo" title="logo" width="137px" heigh="30px" />
+            <p class="footer__text">
+              We are a media agency convinced that the success of a business depends on the ability to adapt and inventOur mission is to adequately respond to the challenges of new realities and offer our clients integrated, adaptive and innovative solutions for sustainable business development.
+            </p>
+          </div>
+          <nav class="footer__column">
+            <h5 class="footer__title">Site Map</h5>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="index.html" class="footer__link" alt="home" title="home">Home</a>
+              </li>
+              <li class="footer__item">
+                <a href="pages/about.html" class="footer__link" alt="about" title="about">About</a>
+              </li>
+              <li class="footer__item">
+                <a href="pages/portfolio.html" class="footer__link" alt="portfolio" title="portfolio">Portfolio</a>
+              </li>
+              <li class="footer__item">
+                <a href="pages/events.html" class="footer__link" alt="events" title="events">Events</a>
+              </li>
+              <li class="footer__item">
+                <a href="pages/blog.html" class="footer__link" alt="blog" title="blog">Blog</a>
+              </li>
+              <li class="footer__item">
+                <a href="pages/contact.html" class="footer__link" alt="contact" title="contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="footer__column">
+            <h5 class="footer__title">Contact Us</h5>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="tel:+1234567890" class="footer__link footer__link-tel" alt="tel" title="tel">123-456-7890</a>
+              </li>
+              <li class="footer__item">
+                <a href="tel:+1234567890" class="footer__link footer__link-tel" alt="tel" title="tel">123-456-7890</a>
+              </li>
+              <li class="footer__item">
+                <a href="mailto:ask@ask@lian.ru" class="footer__link footer__link-mail" alt="mail" title="mail">ask@lian.ru</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__column">
+            <h5 class="footer__title">Sign up to our newsletter</h5>
+            <form action="/" class="sign-form">
+              <input type="email" class="sign-form__field" name="email" placeholder="Email address"required />
+            </form>
+            <p class="sign-form__text">
+              *Subscribe to our newsletter to receive communications and early
+              updates from Lian SEO Agency.
+            </p>
+            <nav class="messenger">
+              <a class="nav__messenger" href="https://telegram.com/" alt="telegram" title="telegram">
+                <i class="fa-brands fa-telegram"></i>
+              </a>
+              <a class="nav__messenger" href="https://instagram.com/" alt="instagram" title="instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a class="nav__messenger" href="https://facebook.com/" alt="facebook" title="facebook">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a class="nav__messenger" href="https://whatsapp.com/" alt="whatsapp" title="whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <a class="nav__messenger" href="https://twitter.com/" alt="twitter" title="twitter">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a class="nav__messenger" href="https://youtube.com/" alt="youtube" title="youtube">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+              <a class="nav__messenger" href="https://vk.com/" alt="vk" title="vk">
+                <i class="fa-brands fa-vk"></i>
+              </a>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom container">
+        <p>&copy; All rights reserved.<span>Made with</span>by Lian Studio</p>
+      </div>
+    </footer>
+    <script src='js/main.js'></script>
+  </body>
+</html>
+

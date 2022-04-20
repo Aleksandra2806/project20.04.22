@@ -1,0 +1,352 @@
+/*intro*/
+.intro {
+    background: url('../img/fon_about_contact.jpg') center no-repeat;
+    max-width: 100%;
+    height: 350px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.intro__suptitle {
+    font-family: 'Kaushan Script', cursive;
+    padding-top: 70px;
+    text-align: left;
+    font-size: 50px;
+    color:rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+.intro__title {
+    margin-top: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 1;
+    color:rgb(0, 0, 0);
+}
+.intro__title__text {
+    font-size: 15px;
+    max-width: 70%;
+}
+/*about*/
+progress {
+    width: 700px;
+}
+.about {
+    display: flex;
+    justify-content: space-around;
+}
+.about_image {
+    padding-top: 40px;
+    padding-left: 100px;
+    margin: 40px;
+    max-width: 500px;
+}
+.about_story {
+    padding-top: 80px;
+    padding-right: 90px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+/*team*/
+.team__title {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 40px;
+}
+.team {
+    max-width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+.foto_team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.about__team {
+    text-align: center;
+    max-width: 357px;
+    margin: 10px;
+    transition: .3s linear;
+}
+.about__team img {
+    transition: .3s linear;
+}
+.about__team:hover {
+    transform: scale(1.1);
+}
+
+/*slider*/
+.slider__title {
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 40px;
+}
+#slider {
+    position: relative;
+	text-align: center;
+    left: 50px;
+}
+#slider{
+	margin: 0 auto;
+}
+#slides article{ 
+	width: 20%;
+	float: left;
+}
+#slides .image{ 
+	width: 500%;
+	line-height: 0;
+}
+#overflow{ 
+	width: 100%;
+	overflow: hidden;
+}
+article img{ 
+	width: 100%;
+}
+#desktop:checked ~ #slider{ 
+	max-width: 1200px; 
+}
+#switch1:checked ~ #controls label:nth-child(3), 
+#switch2:checked ~ #controls label:nth-child(1),
+#switch3:checked ~ #controls label:nth-child(2) {
+	background: url('../img/prev.png') no-repeat;
+	float: left;
+	margin: 90px 0 0 -70px; 
+	display: block;
+	height: 48px;
+	width: 48px;
+}
+#switch1:checked ~ #controls label:nth-child(2), 
+#switch2:checked ~ #controls label:nth-child(3),
+#switch3:checked ~ #controls label:nth-child(1) {
+	background: url('../img/next.png') no-repeat;
+	float: right;
+	margin: 90px 30px 0 0;
+	display: block;
+	height: 48px;
+	width: 48px;
+}
+label, a { 
+	cursor: pointer;
+}
+.slider_all input { 
+	display: none;
+}
+#switch1:checked ~ #slides .image {
+	margin-left: 0;
+}
+#switch2:checked ~ #slides .image {
+	margin-left: -100%;
+}
+#switch3:checked ~ #slides .image {
+	margin-left: -200%;
+}
+#controls {
+	margin: -25% 0 0 0;
+	width: 100%;
+	height: 50px;
+}
+#active label {
+    position: relative;
+    right: 70px;
+	border-radius: 10px; 
+	display: inline-block; 
+	width: 15px;
+	height: 15px;
+	background: #bbb;
+}
+#active { 
+	margin: 25% 0 10px;
+	text-align: center;
+}
+#active label:hover {
+	background: #000000;
+	border-color: #777 !important; 
+}
+#switch1:checked ~ #active label:nth-child(1),
+#switch2:checked ~ #active label:nth-child(2),
+#switch3:checked ~ #active label:nth-child(3) {
+	background: #000000;
+	border-color: #000000 !important;
+}
+#slides .image { 
+	transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+#controls label:hover{  
+	opacity: 0.6;
+}
+#controls label {
+	transition: opacity 0.2s ease-out;
+}
+
+@media all and (max-width: 1430px) {
+    progress {
+        width: 600px;
+    }
+    .about_image {
+        padding-left: 80px;
+    }
+    .about_story {
+        padding-right: 60px;
+    }
+}
+@media all and (max-width: 1371px) {
+    progress {
+        width: 500px;
+    }
+    .about_image {
+        padding-left: 50px;
+    }
+    .about_story {
+        padding-right: 40px;
+    }
+}
+@media all and (max-width: 1300px) {
+    .about_image {
+        padding-left: 20px;
+    }
+    .about_story {
+        padding-right: 20px;
+    }
+    #desktop:checked ~ #slider{ 
+        max-width: 1100px; 
+    }
+}
+@media all and (max-width: 1204px) {
+    #desktop:checked ~ #slider{ 
+        max-width: 1000px; 
+    }
+    .stat__progress {
+        display: block;
+    }
+}
+@media all and (max-width: 1115px) {
+    .about {
+        flex-wrap: wrap;
+    }
+    .about_story {
+        padding-left: 63px;
+        padding-right: 63px;
+        padding-top: 0px;
+    }
+    .about_story > h3 {
+        text-align: center;
+        font-size: 20px;
+    }
+    progress {
+        width: 800px;
+    }
+    #desktop:checked ~ #slider{ 
+        max-width: 800px; 
+    } 
+}
+@media all and (max-width: 920px) {
+    progress {
+        width: 700px;
+    }
+    #desktop:checked ~ #slider{ 
+        max-width: 700px; 
+    } 
+}
+@media all and (max-width: 840px) {
+    .header {
+        margin-top: 0;
+        padding-top: 10px;
+        background-color: #f0f0f2;
+    }
+    .nav {
+        display: none;
+        position: absolute;
+        top: 228px;
+        left: 50%;
+        width: 100%;
+        background-color: #f0f0f2;
+        transform: translate(-50%, -50%);
+    }
+    .nav.active {
+        display: block;
+    }
+    .nav__mobile {
+        display: block;
+    }
+    .nav__link {
+        display: block;  
+        color: rgb(9, 9, 9);
+        text-align: center;
+        padding: 10px 0;
+    }
+    progress {
+        width: 600px;
+    }
+    #desktop:checked ~ #slider{ 
+        max-width: 600px; 
+    } 
+}
+@media all and (max-width: 730px) {
+    progress {
+        width: 500px;
+    }
+    #desktop:checked ~ #slider{ 
+        max-width: 500px; 
+    } 
+    .intro__title__text {
+        font-size: 11px;
+    }
+    .footer__container {
+        flex-wrap: wrap;
+        max-width: 80%;
+    }
+    .sign-form,
+    .sign-form__text {
+        margin: 0;
+    }
+    .footer__column:first-child {
+        width: 250px;
+    } 
+    .nav__messenger > i {
+        padding-left: 15px;
+    }
+    .footer__title {
+        font-size: 13px;
+    }
+}
+@media all and (max-width: 630px) {
+    progress {
+        width: 400px;
+    }
+    .slider_all {
+        display: none;
+    }
+    .about_image {
+        max-width: 400px;
+    }
+}
+@media all and (max-width: 530px) {
+    .intro__title__text {
+        font-size: 7px;
+    }
+    .about_image {
+        max-width: 300px;
+    }
+    progress {
+        width: 300px;
+    }
+    .about_story {
+        padding-left: 43px;
+        padding-right: 43px;
+    }
+}
+@media all and (max-width: 465px) {
+    .portfolio {
+        margin: 0;
+        padding: 0;
+    }
+    .footer__column:first-child {
+        width: 200px;
+    }
+    .footer__title {
+        font-size: 10px;
+    }
+}
